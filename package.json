@@ -1,20 +1,21 @@
 {
-  "name": "fem--meet-landing-page",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CharlieCastleWeb/fem--meet-landing-page.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/CharlieCastleWeb/fem--meet-landing-page/issues"
-  },
-  "homepage": "https://github.com/CharlieCastleWeb/fem--meet-landing-page#readme"
+    "name": "fem--meet-landing-page",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "sass": "sass --watch scss/global.scss css/styles.css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/CharlieCastleWeb/fem--meet-landing-page.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/CharlieCastleWeb/fem--meet-landing-page/issues"
+    },
+    "homepage": "https://github.com/CharlieCastleWeb/fem--meet-landing-page#readme"
 }
