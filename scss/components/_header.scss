@@ -1,0 +1,11 @@
+@use "../settings" as *;
+
+.header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: $spacing-50;
+  margin-top: $spacing-600;
+  @media (min-width: $breakpoint-sm) {
+    margin-top: $spacing-1000;
+  }
+}

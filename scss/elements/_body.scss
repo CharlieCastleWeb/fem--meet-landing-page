@@ -1,8 +1,5 @@
 @use "../settings" as *;
 
 body {
-  align-items: center;
-  background-color: $c-body-background;
-  display: flex;
-  flex-direction: column;
+  font-family: $font-family-body;
 }

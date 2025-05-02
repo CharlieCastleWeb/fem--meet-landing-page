@@ -1,0 +1,110 @@
+@use "../settings" as *;
+
+.hero {
+  margin-top: $spacing-800;
+  overflow: hidden;
+
+  @media (min-width: $breakpoint-lg) {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    margin-left: -1.5%;
+    width: 103%;
+  }
+
+  &__image {
+    display: block;
+    margin-left: -8%;
+    max-width: none;
+    width: 115%;
+
+    @media (min-width: $breakpoint-sm) {
+      margin-left: -3%;
+      width: 106%;
+    }
+    @media (min-width: $breakpoint-lg) {
+      margin-left: 0;
+      width: 22rem;
+    }
+  }
+
+  &__image--right {
+    display: none;
+    margin-left: 0;
+    margin-right: -8%;
+    @media (min-width: $breakpoint-lg) {
+      display: block;
+      margin-right: 0;
+      max-width: none;
+      width: 22rem;
+    }
+  }
+
+  &__content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-300;
+    margin: 0 auto;
+    width: 80%;
+    @media (min-width: $breakpoint-sm) {
+      width: 60%;
+    }
+    @media (min-width: $breakpoint-lg) {
+      width: 30%;
+    }
+  }
+
+  &__title {
+    @include text-preset-1;
+    color: $c-slate-900;
+    margin-top: $spacing-600;
+    text-align: center;
+    @media (min-width: $breakpoint-lg) {
+      margin-top: $spacing-100;
+    }
+  }
+
+  &__description {
+    @include text-preset-4;
+    color: $c-slate-600;
+    text-align: center;
+  }
+
+  &__actions {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-200;
+    @media (min-width: $breakpoint-sm) {
+      flex-direction: row;
+    }
+  }
+
+  &__button {
+    @include text-preset-5;
+    background-color: $c-cyan-600;
+    color: $c-white;
+    transition: $transition-btn-hover;
+    &:hover {
+      background-color: $c-cyan-hover;
+    }
+  }
+
+  .button {
+    &__version {
+      color: $c-cyan-300;
+    }
+  }
+
+  &__link {
+    @include text-preset-5;
+    background-color: $c-purple-600;
+    color: white;
+    text-decoration: none;
+    transition: $transition-btn-hover;
+    &:hover {
+      background-color: $c-purple-hover;
+    }
+  }
+}

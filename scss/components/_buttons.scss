@@ -1,0 +1,10 @@
+@use "../settings" as *;
+
+.button {
+  border-radius: 99px;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: $spacing-200 $spacing-500;
+  text-align: center;
+}
