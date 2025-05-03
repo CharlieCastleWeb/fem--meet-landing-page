@@ -2,16 +2,29 @@
 
 .main-content {
   padding: $spacing-400;
+  @media (min-width: $breakpoint-sm) {
+    padding-bottom: $spacing-800;
+    padding-top: $spacing-700;
+  }
 }
 
 .feature {
   margin-top: $spacing-800;
+  @media (min-width: $breakpoint-lg) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 78%;
+  }
 }
 
 .feature__gallery {
   display: grid;
   gap: $spacing-200;
   grid-template-columns: repeat(2, 1fr);
+  @media (min-width: $breakpoint-sm) {
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 $spacing-100;
+  }
   img {
     border-radius: $border-radius-sm;
   }
@@ -19,8 +32,16 @@
 
 .feature_article {
   margin-top: $spacing-800;
-
+  margin-top: $spacing-800;
   text-align: center;
+  @media (min-width: $breakpoint-sm) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+  @media (min-width: $breakpoint-lg) {
+    width: 60%;
+  }
 }
 
 .feature_article__subtitle {

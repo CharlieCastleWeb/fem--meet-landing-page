@@ -4,6 +4,10 @@
   overflow: hidden;
   padding-bottom: $spacing-400;
   padding-top: $spacing-800;
+  @media (min-width: $breakpoint-sm) {
+    padding-bottom: $spacing-800;
+  }
+
   @media (min-width: $breakpoint-lg) {
     align-items: flex-start;
     display: flex;
