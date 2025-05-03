@@ -1,0 +1,41 @@
+@use "../settings" as *;
+
+.main-content {
+  padding: $spacing-400;
+}
+
+.feature {
+  margin-top: $spacing-800;
+}
+
+.feature__gallery {
+  display: grid;
+  gap: $spacing-200;
+  grid-template-columns: repeat(2, 1fr);
+  img {
+    border-radius: $border-radius-sm;
+  }
+}
+
+.feature_article {
+  margin-top: $spacing-800;
+
+  text-align: center;
+}
+
+.feature_article__subtitle {
+  @include text-preset-3;
+  color: $c-cyan-600;
+}
+
+.feature_article__title {
+  @include text-preset-2;
+  color: $c-slate-900;
+  margin-top: $spacing-200;
+}
+
+.feature_article__description {
+  @include text-preset-4;
+  color: $c-slate-600;
+  margin-top: $spacing-400;
+}
