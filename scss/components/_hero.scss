@@ -87,10 +87,10 @@
 }
 
 .hero__button {
-  @include text-preset-5;
+  
   background-color: $c-cyan-600;
   color: $c-white;
-  transition: $transition-btn-hover;
+  
   &:hover {
     background-color: $c-cyan-hover;
   }

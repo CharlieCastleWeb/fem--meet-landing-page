@@ -5,9 +5,12 @@
   display: flex;
   height: 136px;
   justify-content: center;
+  position: relative;
+  z-index: 1;
   &__number {
     @include text-preset-5;
     align-items: center;
+    background-color: $c-white;
     border-radius: 99px;
     border: 1px solid $c-slate-300;
     color: $c-slate-600;
